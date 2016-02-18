@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onSwipeBottom() {
                 //Toast.makeText(MainActivity.this, "bottom", Toast.LENGTH_SHORT).show();
+                //getInitialState(dominoImage);
             }
 
         });
@@ -51,5 +52,10 @@ public class MainActivity extends AppCompatActivity {
                 image.setImageResource(R.mipmap.domino_down);
                 break;
         }
+    }
+
+    private void getInitialState(ImageView image) {
+        canSwipe = true;
+        image.setImageResource(R.mipmap.domino_up);
     }
 }
