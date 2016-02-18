@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
     private void rotateImage(ImageView image, int direction) {
         switch (direction) {
             case LEFT_IMAGE:
